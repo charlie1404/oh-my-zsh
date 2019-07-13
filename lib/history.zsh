@@ -38,3 +38,10 @@ setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 setopt share_history          # share command history data
+setopt inc_append_history     # add commands to HISTFILE in order of execution
+setopt bang_hist              # Treat the '!' character specially during expansion.
+setopt hist_ignore_all_dups   # Delete an old recorded event if a new event is a duplicate.
+setopt hist_find_no_dups      # Do not display a previously found event.
+setopt hist_save_no_dups      # Do not write a duplicate event to the history file.
+setopt hist_beep              # Beep when accessing non-existent history.
+setopt hist_reduce_blanks     # Remove superfluous blanks before recording entry.
