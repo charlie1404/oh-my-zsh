@@ -28,6 +28,8 @@ export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
 export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_"
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 export NODE_PATH=$NODE_PATH:$HOME/.config/yarn/global/node_modules
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export LC_ALL=en_US.UTF-8
 
 
 plugins=(

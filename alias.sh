@@ -29,11 +29,12 @@ alias gfcr='git clone --recurse-submodules'
 alias gfm='git pull'
 alias gfr='git pull --rebase'
 
+alias gs='git stash'
 alias cll='colorls -la --report --gs'
 alias cat='bat'
 alias mux='tmuxinator'
 alias copy="tr -d '\n' | pbcopy"
-alias open="o"
+alias o="open"
 alias run="open -a 'Google Chrome Canary' --args --disable-web-security --user-data-dir='/Users/gupta/Desktop/nosecurity'"
 alias nodevm='source "$HOME/.nvm/nvm.sh"'
 # git log --date=iso --pretty=format:'%ad %H %s' | awk '$0 >= "2018-05-10" && $0 <= "2018-12-31"'
