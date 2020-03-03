@@ -74,3 +74,5 @@ ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/slss.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
