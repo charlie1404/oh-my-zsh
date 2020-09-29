@@ -24,11 +24,10 @@ export ZSH="$HOME/.oh-my-zsh"
 export TERM="xterm-256color"
 export EDITOR="nano"
 export VISUAL="nano"
-export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
-export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_"
 export LESS='-F -g -i -M -R -S -w -X -z-4'
+# export BAT_PAGER="less -g -i -R -S -w"
 export NODE_PATH=$NODE_PATH:$HOME/.config/yarn/global/node_modules
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.cargo/bin:/usr/local/go/bin
 export LC_ALL=en_US.UTF-8
 
 
@@ -36,7 +35,6 @@ plugins=(
   git
   history
   colored-man-pages
-  alias-tips
   common-aliases
   zsh-autosuggestions
   zsh-completions
@@ -64,15 +62,3 @@ ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 # export UPDATE_ZSH_DAYS=30 # Uncomment the following line to change how often to auto-update (in days).
 # DISABLE_MAGIC_FUNCTIONS=true # Uncomment the following line if pasting URLs and other text is messed up.
 # ZSH_CUSTOM=/path/to/new-custom-folder # Would you like to use another custom folder than $ZSH/custom?
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/gupta/Desktop/workspace/ais-service-solution-manager/node_modules/tabtab/.completions/slss.zsh
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
